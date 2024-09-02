@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'CustomFont'; /* Name your font family */
-    src: url(fonts/AgrozzaDemoRegular.ttf); /* Locate the .ttf file within your directory*/
+    font-family: 'CustomFont';
+    src: url(fonts/AgrozzaDemoRegular.ttf);
   }
 
 * {
@@ -25,7 +25,7 @@ body a {
     background-color: rgba(0, 0, 0, 0.466);
 }
 
-.banner-container {
+.mainbody {
     height: 100vh;
     background-image: url(images/hero-2.jpg);
     background-size: cover;
@@ -71,7 +71,7 @@ body a {
     text-transform: uppercase;
     letter-spacing: 2px;
     word-spacing: 5px;
-    transition: 0.1s ease-in-out;
+    transition: 0.1s linear;
 }
 
 .nav-links ul li a:hover {
@@ -211,4 +211,132 @@ body a {
     background-image: url(images/subscription.webp);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/* category starts here---------------------------------- */
+.cat-wrap-bg {
+    background-image: url(images/bg.jpeg);
+    background-size: cover;
+}
+
+.cat-wrap-trans {
+    background-color: rgba(0, 0, 0, 0.514);
+    padding-bottom: 8rem;
+}
+
+.cat-head h1 {
+    color: pink;
+    font-size: 60px;
+    font-weight: 300;
+    padding-top: 8rem;
+    text-align: center;
+}
+
+.sp-cat {
+    color: pink;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.wrapper-cat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: fit-content;
+    padding: 5rem 3rem;
+}
+
+.card img {
+    height: 450px;
+    width: 300px;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+.card {
+    width: 300px;
+    height: 450px;
+    box-shadow: 0 0 30px rgba(255, 192, 203, 0.473);
+    transition: ease-in-out 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+    border: 8px groove pink;
+}
+.text {
+    height: 450px;
+    width: 300px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(rgba(145, 17, 113, 0.514),rgba(180, 103, 2, 0.432));
+    color: white;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+
+    bottom: 10%;
+}
+.text p {
+    position: absolute;
+    bottom: 0;
+}
+.text h2 {
+    position: absolute;
+    bottom: 70px;
+    text-align: center;
+    left: 25%;
+    bottom: 45%;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.747);
+}
+.card:hover .text{
+    opacity: 1;
+    transition: ease-in 0.3s;
+}
+.card:hover img{
+    scale: 1.1;
+    transition: ease-in 0.3s;
+    }
+.card:hover {
+    scale: 1.08;
+    transition: ease-in 0.3s;
+}
+
+/* footer area--------------------------------- */
+
+
+.footer {
+    height: fit-content;
+    width: 100%;
+    background-color: #34c7a2
+}
+
+.ftr-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: pink
+}
+
+.ftr-wrap p, .ftr-wrap i {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.social {
+    margin: 0 auto;
+    margin: 2rem;
+}
+
+.social a i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.social a:hover i{
+    scale: 2;
+    transition: 0.1s ease-in-out;
 }
